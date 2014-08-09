@@ -11,7 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 public class HelloServlet extends HttpServlet {
  
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("헬로 서블릿 ㅋ");
+		response.getWriter().write("<HTML>");
+		response.getWriter().write("<BODY>");
+		response.getWriter().write("<H1>Hello, Servlet!</H1>");
+		response.getWriter().write("</BODY>");
+		response.getWriter().write("</HTML>");
 	}
 	
 }

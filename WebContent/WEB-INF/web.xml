@@ -24,4 +24,14 @@
 		<servlet-name>HelloServlet</servlet-name>
 		<url-pattern>/HelloServlet</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+        <description>서블릿 생명주기 예제</description>
+        <servlet-name>ServletLifeCycleExample</servlet-name>
+        <servlet-class>com.baron.servlet.ServletLifeCycleExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletLifeCycleExample</servlet-name>
+        <url-pattern>/ServletLifeCycleExample</url-pattern>
+    </servlet-mapping>
 </web-app>
